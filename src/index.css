@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
@@ -10,7 +11,8 @@ html, body {
 
 @layer utilities {
   @keyframes blink {
-    0%, 100%{
+    0%,
+    100% {
       opacity: 1;
     }
     50% {
@@ -45,4 +47,85 @@ html, body {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 20px;
+  background-color: white;
+  opacity: 0;
+  transform: translateY(-50%) scaleY(0);
+  transition: all 0.3s ease;
+}
+
+.nav-link::before {
+  left: -10px;
+}
+
+.nav-link::after {
+  right: -10px;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) scaleY(1);
+}
+
+.flow-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #f59e0b; /* amber-400 */
+  z-index: 10;
+  transition: height 0.8s ease;
+  border-radius: 0.19rem; /* match Tailwind's rounded */
+}
+
+.flow-button:hover::before {
+  height: 100%;
+}
+
+.flow-button:hover span {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.reverse-flow-button {
+  background-color: #f59e0b; /* amber-500 */
+  position: relative;
+}
+
+.reverse-flow-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  transition: height 0.8s ease;
+  height: 0%;
+}
+
+.reverse-flow-button:hover::before {
+  height: 100%;
+}
+
+.reverse-flow-button:hover span {
+  color: #f59e0b; /* amber-500 */
+  transition: color 0.3s ease;
 }
