@@ -74,30 +74,53 @@ export const About = () => {
                   (2021-2025)
                 </li>
                 <li>
-                  Relevant Coursework: AP Computer Science Principles, AP Computer Science A, AP Calculus
+                  Relevant Coursework: AP Computer Science Principles, AP
+                  Computer Science A, AP Calculus
                 </li>
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+              <h3 className="text-xl font-bold mb-4">
+                {" "}
+                💼 Volunteer Experience{" "}
+              </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    Software Engineer at ABC Corp (2020 - Present)
+                    Hopebridge | Assistant (2023 - 2025)
                   </h4>
                   <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
+                    Responsibilities include: Supervising the children while the
+                    Behavior Analyst conducts important tasks, assisting the
+                    Behavior Analysts to gather supplies and moving the supplies
+                    from room to room to improve efficiency, creating visuals
+                    for the children.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold">
-                    Intern at DEF Startups (2019)
+                    Future Business Leaders of America | Treasurer
+                    (2024-Present)
                   </h4>
                   <p>
-                    Assisted in building front-end components and integrating
-                    REST APIs
+                    Chosen as treasurer of the class CTSO. Participated in
+                    various events such as conferences and competitions. Placed
+                    in regional competition for Computer Game and Simulation
+                    Programming and competed in the State competition. Improved
+                    presentation and leadership skills.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">
+                    Tolleson Food Bank | Food Unpacker (2024-Present)
+                  </h4>
+                  <p>
+                    Chosen as treasurer of the class CTSO. Participated in
+                    various events such as conferences and competitions. Placed
+                    in regional competition for Computer Game and Simulation
+                    Programming and competed in the State competition. Improved
+                    presentation and leadership skills.
                   </p>
                 </div>
               </div>
